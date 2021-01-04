@@ -1,0 +1,38 @@
+service: api-start-wars
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  createPeople:
+    handler: handler.createPeople
+    events:
+      - http:
+          path: people
+          method: post
+          cors: true
+
+  updatePeople:
+    handler: handler.updatePeople
+    events:
+      - http:
+          path: people/{id}
+          method: put
+          cors: true
+
+  deletePeople:
+    handler: handler.deletePeople
+    events:
+      - http:
+          path: people/{id}
+          method: delete
+          cors: true
+
+  people:
+    handler: handler.people
+    events:
+      - http:
+          path: people/{id}
+          method: get
+          cors: true

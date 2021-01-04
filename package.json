@@ -1,0 +1,17 @@
+{
+  "name": "api-star-wars",
+  "version": "1.0.0",
+  "description": "To use MongoDB with AWS and Serverless. layout: Doc framework: v1 platform: AWS language: nodeJS authorLink: 'https://github.com/WenAP' authorName: 'Wendy Apaza' authorAvatar: 'https://avatars3.githubusercontent.com/u/33870141?s=460&u=beb6d8e62ffcade7b44d09c91bb4b04512c93ae7&v=4'",
+  "main": "handler.js",
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "mongoose": "4.9.6",
+    "validator": "7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wendy Apaza <wendyapazapalacios@gmail.com>",
+  "license": "ISC"
+}
